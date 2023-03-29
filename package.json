@@ -1,0 +1,42 @@
+{
+  "name": "Entrega-M6-Api",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:bruno3p/Entrega-M6-Api.git",
+  "author": "Bruno <bruno3p33@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "ts-node-dev --ignore-watch node_modules src/server.ts",
+    "typeorm": "typeorm-ts-node-commonjs",
+    "test": "cross-env NODE_ENV=test SECRET_KEY=secreta!chave jest --verbose --runInBand",
+    "build": "tsc",
+    "start": "ts-node-dev --ignore-watch node_modules src/server.ts"
+  },
+  "dependencies": {
+    "@types/bcryptjs": "^2.4.2",
+    "bcryptjs": "^2.4.3",
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-async-errors": "^3.1.1",
+    "jest": "^29.5.0",
+    "jsonwebtoken": "^9.0.0",
+    "pg": "^8.10.0",
+    "reflect-metadata": "^0.1.13",
+    "sqlite3": "^5.1.6",
+    "supertest": "^6.3.3",
+    "ts-jest": "^29.0.5",
+    "typeorm": "0.3.11",
+    "yup": "0.32.11"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.17",
+    "@types/jest": "^29.5.0",
+    "@types/jsonwebtoken": "^9.0.1",
+    "@types/node": "^18.15.7",
+    "@types/supertest": "^2.0.12",
+    "ts-node": "^10.9.1",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.0.2"
+  }
+}
