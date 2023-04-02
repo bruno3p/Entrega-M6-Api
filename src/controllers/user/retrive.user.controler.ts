@@ -1,5 +1,5 @@
-import retrieveUserService from "../../services/User/retrieveUser.service";
 import { Request, Response } from "express";
+import retrieveUserService from "../../services/users/retrieveUser.service";
 
 const retrieveUserController = async (req: Request, res: Response) => {
   const user = await retrieveUserService(req.user);
